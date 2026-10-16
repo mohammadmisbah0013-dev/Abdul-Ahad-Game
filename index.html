@@ -143,8 +143,8 @@ function startEngine(){
 function engineSet(on,fr){
   if(!eng||!AC)return;
   const t=AC.currentTime;
-  eng.g.gain.setTargetAtTime(on?0.065+0.065*fr:0,t,0.08);
-  eng.o.frequency.setTargetAtTime(65+fr*170,t,0.08);
+  eng.g.gain.setTargetAtTime(on?0.03+0.03*fr:0,t,0.08);
+  eng.o.frequency.setTargetAtTime(50+fr*100,t,0.08);
 }
 
 /* ---------------- RENDERER / SCENE ---------------- */
